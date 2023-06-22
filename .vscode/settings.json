@@ -1,0 +1,21 @@
+{
+    // formatting
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "poetry run black",
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "isort.path": "poetry run isort",
+    // linting
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "poetry run flake8",
+    // auto complete
+    "python.autoComplete.extraPaths": [
+        "src"
+    ],
+}
