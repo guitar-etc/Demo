@@ -13,4 +13,4 @@ jobs:
       #   with:
       #     python-version: '3.9'
       #     cache: 'poetry' # caching pip dependencies
-      - run: ./pre_push.sh
+      - run: ./init.sh
