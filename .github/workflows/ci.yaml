@@ -1,0 +1,19 @@
+---
+name: CI
+on: [push]
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      # https://github.com/actions/setup-python/blob/main/docs/advanced-usage.md#caching-packages
+      - uses: actions/checkout@v3
+      # TODO I can't find a way to cache both pip and poetry.
+      # I don't know how to cache pipx.
+      # caching pip didn't help too much with time 11 -> 9 sec?
+      # so cache poetry for now.
+      - run: pipx install poetry
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: poetry  # caching poetry dependencies
+      - run: ./init.sh
