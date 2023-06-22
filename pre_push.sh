@@ -1,4 +1,4 @@
 set -ex
 
-./lint.sh
+./lint_format.sh
 ./test.sh
