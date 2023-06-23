@@ -1,6 +1,8 @@
 # Demo
 Demo of an ideal repository and application
 
+This repo has issues and pull requests as if multiple developers collaborate as a team.
+
 # Scripts
 All developer actions are documented with runnable scripts.
 The scripts are in the root of the repo.
