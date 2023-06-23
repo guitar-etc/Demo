@@ -1,2 +1,2 @@
-def check_health():
+def health_check():
     return True

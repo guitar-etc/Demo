@@ -1,5 +1,5 @@
-from calculator.src.logic import check_health
+from calculator.src.logic import health_check
 
 
-def test_check_health():
-    assert check_health()
+def test_health_check():
+    assert health_check()

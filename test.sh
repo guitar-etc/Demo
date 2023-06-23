@@ -1,3 +1,3 @@
 set -ex
 
-poetry run pytest calculator
+poetry run pytest calculator $@
